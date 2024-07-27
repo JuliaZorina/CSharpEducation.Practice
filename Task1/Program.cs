@@ -6,7 +6,7 @@ namespace Practice2.Task1
     {
         static void Main(string[] args)
         {
-            TaskE();   
+            TaskF();   
         }
         public static void TaskA()
         {
@@ -63,6 +63,25 @@ namespace Practice2.Task1
                 Console.Write($"{wordsArr[i]} ");
                 i++;
             }
+        }
+        public static void TaskF()
+        {
+            Console.WriteLine("Введите слова");
+            string[] wordsArr = new string[5];
+            int i = 0;
+            do
+            {
+                wordsArr[i] = Console.ReadLine();
+                i++;
+            }
+            while (i < 5);
+            i = 0;
+            do
+            {
+                Console.Write($"{wordsArr[i]} ");
+                i++;
+            }
+            while (i < 5);
         }
     }
 }

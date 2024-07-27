@@ -6,7 +6,7 @@ namespace Practice2.Task1
     {
         static void Main(string[] args)
         {
-            TaskB();   
+            TaskC();   
         }
         public static void TaskA()
         {
@@ -24,6 +24,15 @@ namespace Practice2.Task1
                 i++;
             }
         }
-        
+        public static void TaskC()
+        {
+            int i = 0;
+            do
+            {
+                Console.WriteLine(i);
+                i++;
+            }
+            while (i < 10);
+        }
     }
 }

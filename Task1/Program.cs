@@ -6,7 +6,7 @@ namespace Practice2.Task1
     {
         static void Main(string[] args)
         {
-            TaskD();   
+            TaskE();   
         }
         public static void TaskA()
         {
@@ -45,6 +45,23 @@ namespace Practice2.Task1
             for(int i=0;i< wordsArr.Length; i++)
             {
                 Console.Write($"{wordsArr[i]} ");
+            }
+        }
+        public static void TaskE()
+        {
+            Console.WriteLine("Введите слова");
+            string[] wordsArr = new string[5];
+            int i = 0;
+            while (i < wordsArr.Length)
+            {
+                wordsArr[i] = Console.ReadLine();
+                i++;
+            }
+            i = 0;
+            while (i < wordsArr.Length)
+            {
+                Console.Write($"{wordsArr[i]} ");
+                i++;
             }
         }
     }

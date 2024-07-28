@@ -19,30 +19,30 @@ namespace Practice2.Task6
 
         private static void SymbolInString()
         {
-            var s = "банан";
+            var str = "банан";
             var symbol = 'а';
             var counter = 0;
-            for (int i = 0; i < s.Length; i++)
+            for (int i = 0; i < str.Length; i++)
             {
-                if (s[i] == symbol)
+                if (str[i] == symbol)
                     counter++;
 
             }
-            Console.WriteLine((double)counter / s.Length * 100 + "%");
+            Console.WriteLine((double)counter / str.Length * 100 + "%");
         }
         private static void UserSymbolInString()
         {
-            var s = Console.ReadLine();
+            var str = Console.ReadLine();
 
             var symbol = Console.ReadLine()[0];
             var counter = 0;
-            for (int i = 0; i < s.Length; i++)
+            for (int i = 0; i < str.Length; i++)
             {
-                if (s[i] == symbol)
+                if (str[i] == symbol)
                     counter++;
 
             }
-            Console.WriteLine((double)counter / s.Length * 100 + "%");
+            Console.WriteLine((double)counter / str.Length * 100 + "%");
         }
 
     }

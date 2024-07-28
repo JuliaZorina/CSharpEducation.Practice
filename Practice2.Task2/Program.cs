@@ -11,8 +11,8 @@ namespace Practice2.Task2
         public static void MToKm()
         {
             Console.WriteLine("Введите длину в метрах");
-            var m = double.Parse(Console.ReadLine());
-            Console.WriteLine($"Длина в километрах: {m*0.001}");
+            var meters = double.Parse(Console.ReadLine());
+            Console.WriteLine($"Длина в километрах: {meters * 0.001}");
         }
         public static void KmTocm()
         {
@@ -29,8 +29,8 @@ namespace Practice2.Task2
         public static void CToF()
         {
             Console.WriteLine("Введите температуру в градусах Цельсия");
-            var c = double.Parse(Console.ReadLine());
-            Console.WriteLine($"Температура в Фаренгейтах: {c * 1.8+32}");
+            var degreesC = double.Parse(Console.ReadLine());
+            Console.WriteLine($"Температура в Фаренгейтах: {degreesC * 1.8+32}");
         }
     }
 }

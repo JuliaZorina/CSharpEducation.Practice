@@ -26,7 +26,7 @@ namespace Practice2.Task24
         }
         private static void ShowWeekDay(WeekDay day)
         {
-            Console.WriteLine(day.ToString());
+            Console.WriteLine(day);
         }
 
     }

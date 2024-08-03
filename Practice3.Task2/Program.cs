@@ -1,5 +1,4 @@
-﻿using Practice3.Task1;
-using System;
+﻿using System;
 
 namespace Practice3.Task2
 {

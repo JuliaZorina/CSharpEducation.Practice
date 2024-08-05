@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EF38DF94-2255-4E20-B17C-824C2D43EDF4}</ProjectGuid>
+    <ProjectGuid>{010D0149-C6EA-46C8-BCC5-DA6701236C51}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Ptactice3.Task6</RootNamespace>
-    <AssemblyName>Ptactice3.Task6</AssemblyName>
+    <RootNamespace>Practice3.Task7</RootNamespace>
+    <AssemblyName>Practice3.Task7</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Point.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

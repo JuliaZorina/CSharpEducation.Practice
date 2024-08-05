@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанные с этой сборкой.
-[assembly: AssemblyTitle("Ptactice3.Task6")]
+[assembly: AssemblyTitle("Practice3.Task7")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Ptactice3.Task6")]
+[assembly: AssemblyProduct("Practice3.Task7")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID представляет идентификатор typelib, если этот проект доступен из модели COM
-[assembly: Guid("ef38df94-2255-4e20-b17c-824c2d43edf4")]
+[assembly: Guid("010d0149-c6ea-46c8-bcc5-da6701236c51")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //

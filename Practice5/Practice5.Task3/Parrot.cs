@@ -2,12 +2,17 @@
 
 namespace Practice5.Task3
 {
-  public class Parrot : Animal
+  public class Parrot : Animal, IFlyable
   {
     public Parrot(string name, int age)
       :base(name, age)
     {
       Console.WriteLine("An object of the 'Parrot' class was created");
+    }
+
+    public void Fly()
+    {
+      Console.WriteLine("Parrot is flying");
     }
 
     public override void MakeSound()

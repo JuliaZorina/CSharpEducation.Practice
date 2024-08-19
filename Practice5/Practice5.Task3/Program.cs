@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Security.Policy;
 
 namespace Practice5.Task3
 {
@@ -9,14 +8,13 @@ namespace Practice5.Task3
     static void Main(string[] args)
     {
       List<Animal> animals = new List<Animal>() { new Dog("Шарик", 5), new Cat("Пушок", 4) , new Parrot("Кеша", 2) };
-      /*Dog dog = new Dog("Шарик", 5);
-      Cat cat = new Cat("Пушок", 4);
-      Parrot parrot = new Parrot("Кеша", 2);
-
-      cat.MakeSound();
-      dog.MakeSound();*/
+      IFlyable[] flyables = new IFlyable[2] { new Parrot("Толик", 2), new Eagle("Орел", 7)};
+      
       foreach(Animal animal in animals)
         PrintAnimalSound(animal);
+
+      foreach (IFlyable flyable in flyables)
+        flyable.Fly();
     }
 
     public static void PrintAnimalSound(Animal animal)

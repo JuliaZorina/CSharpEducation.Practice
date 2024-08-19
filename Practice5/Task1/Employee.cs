@@ -1,4 +1,5 @@
 ﻿using System;
+using Practice5.Task2;
 
 namespace Practice5.Task1
 {
@@ -39,6 +40,16 @@ namespace Practice5.Task1
 
     public virtual double CalculateBonus()
     {
+      var message = "Метод CalculateBonus() класса Employee";
+      var consoleLog = new ConsoleLogger();
+      consoleLog.Log(message, LogLevel.Trace);
+      consoleLog.Log(message, LogLevel.Debug);
+      consoleLog.Log(message, LogLevel.Info);
+      consoleLog.Log(message, LogLevel.Warning);
+      consoleLog.Log(message, LogLevel.Error);
+      consoleLog.Log(message, LogLevel.Fatal);
+      Console.WriteLine();
+
       return this.salary*0.1;
     }
   }

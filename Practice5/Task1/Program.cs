@@ -1,4 +1,5 @@
 ﻿using System;
+using Practice5.Task2;
 
 namespace Practice5.Task1
 {
@@ -9,6 +10,8 @@ namespace Practice5.Task1
       Employee employee = new Employee("Julia", 100);
       Manager manager = new Manager("Egor", 100, 15);
       Contractor contractor = new Contractor("Oleg", 100, 40);
+
+      var consoleLog = new ConsoleLogger();
 
       /*Console.WriteLine($"employee: {employee.CalculateBonus()}.\nmanager: {manager.CalculateBonus()}." +
         $"\ncontractor: {contractor.CalculateBonus()}.");*/

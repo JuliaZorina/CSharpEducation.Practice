@@ -6,6 +6,12 @@ namespace Practice5.Task3
   {
     static void Main(string[] args)
     {
+      Dog dog = new Dog("Шарик", 5);
+      Cat cat = new Cat("Пушок", 4);
+
+      cat.MakeSound();
+      dog.MakeSound();
+
     }
   }
 }

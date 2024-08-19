@@ -8,5 +8,10 @@ namespace Practice5.Task3
       :base(name, age)
     {
     }
+
+    public override void MakeSound()
+    {
+      Console.WriteLine("Meow!");
+    }
   }
 }

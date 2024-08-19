@@ -46,5 +46,10 @@ namespace Practice5.Task3
     {
       Console.WriteLine("Animal is sleeping");
     }
+
+    public virtual void MakeSound()
+    {
+      Console.WriteLine("Some generic animal sound");
+    }
   }  
 }

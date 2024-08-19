@@ -26,16 +26,7 @@ namespace Practice5.Task1
     public override double CalculateBonus()
     {
       double bonus;
-
-      var message = "Метод CalculateBonus() класса Manager";
-      var consoleLog = new ConsoleLogger();
-      consoleLog.Log(message, LogLevel.Trace);
-      consoleLog.Log(message, LogLevel.Debug);
-      consoleLog.Log(message, LogLevel.Info);
-      consoleLog.Log(message, LogLevel.Warning);
-      consoleLog.Log(message, LogLevel.Error);
-      consoleLog.Log(message, LogLevel.Fatal);
-      Console.WriteLine();
+      LogInfo();
 
       if (this.TeamSize > 5)
         bonus = this.Salary * 0.25;

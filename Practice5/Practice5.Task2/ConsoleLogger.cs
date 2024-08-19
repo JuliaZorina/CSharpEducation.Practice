@@ -7,72 +7,39 @@ namespace Practice5.Task2
   {
     public void Debug(string message)
     {
-      var methodInfo = new StackFrame(1).GetMethod();
-      var className = methodInfo.DeclaringType.Name;
-      Console.WriteLine($"<{DateTime.Now}> | <{className}> | <{LogLevel.Debug}> | <{message}>");
+      Log(message, LogLevel.Debug);
     }
 
     public void Error(string message)
     {
-      var methodInfo = new StackTrace().GetFrame(1).GetMethod();
-      var className = methodInfo.ReflectedType.Name;
-      Console.WriteLine($"<{DateTime.Now}> | <{className}> | <{LogLevel.Error}> | <{message}>");
+      Log(message, LogLevel.Error);
     }
 
     public void Fatal(string message)
     {
-      var methodInfo = new StackTrace().GetFrame(1).GetMethod();
-      var className = methodInfo.ReflectedType.Name;
-      Console.WriteLine($"<{DateTime.Now}> | <{className}> | <{LogLevel.Fatal}> | <{message}>");
+      Log(message, LogLevel.Fatal);
     }
 
     public void Info(string message)
     {
-      var methodInfo = new StackTrace().GetFrame(1).GetMethod();
-      var className = methodInfo.ReflectedType.Name;
-      Console.WriteLine($"<{DateTime.Now}> | <{className}> | <{LogLevel.Info}> | <{message}>");
+      Log(message, LogLevel.Info);
     }
 
     public void Trace(string message)
     {
-      var methodInfo = new StackTrace().GetFrame(1).GetMethod();
-      var className = methodInfo.ReflectedType.Name;
-      Console.WriteLine($"<{DateTime.Now}> | <{className}> | <{LogLevel.Trace}> | <{message}>");
+      Log(message, LogLevel.Trace);
     }
 
     public void Warning(string message)
     {
-      var methodInfo = new StackTrace().GetFrame(1).GetMethod();
-      var className = methodInfo.ReflectedType.Name;
-      Console.WriteLine($"<{DateTime.Now}> | <{className}> | <{LogLevel.Warning}> | <{message}>");
+      Log(message, LogLevel.Warning);
     }
 
     public void Log(string message, LogLevel logLevel)
     {
-      switch (logLevel)
-      {
-        case LogLevel.Debug:
-          Debug(message);
-          break;
-        case LogLevel.Info:
-          Info(message);
-          break;
-        case LogLevel.Warning:
-          Warning(message);
-          break;
-        case LogLevel.Error:
-          Error(message);
-          break;
-        case LogLevel.Fatal:
-          Fatal(message);
-          break;
-        case LogLevel.Trace:
-          Trace(message);
-          break;
-        default:
-          throw new ArgumentException($"Неизвестный уровень логирования: {logLevel}");
-
-      }
+      var methodInfo = new StackTrace().GetFrame(1).GetMethod();
+      var className = methodInfo.ReflectedType.Name;
+      Console.WriteLine($"<{DateTime.Now}> | <{className}> | <{logLevel}> | <{message}>");
     }
   }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
-using Microsoft.Extensions.Logging;
+using System.Diagnostics;
+using System.IO;
 
 namespace Practice5.Task2
 {
@@ -7,37 +8,54 @@ namespace Practice5.Task2
   {
     public void Trace(string message)
     {
-      throw new NotImplementedException();
+      Log(message, LogLevel.Trace);
     }
 
     public void Info(string message)
     {
-      throw new NotImplementedException();
+      Log(message, LogLevel.Info);
     }
 
     public void Debug(string message)
     {
-      throw new NotImplementedException();
+      Log(message, LogLevel.Debug);
     }
 
     public void Warning(string message)
     {
-      throw new NotImplementedException();
+      Log(message, LogLevel.Warning);
     }
 
     public void Error(string message)
     {
-      throw new NotImplementedException();
+      Log(message, LogLevel.Error);
     }
 
     public void Fatal(string message)
     {
-      throw new NotImplementedException();
+      Log(message, LogLevel.Fatal); ;
     }
 
     public void Log(string message, LogLevel logLevel)
     {
-      throw new NotImplementedException();
+      var dir = Directory.GetCurrentDirectory();
+      var path = Path.Combine(dir, "log.txt");
+      var methodInfo = new StackTrace().GetFrame(1).GetMethod();
+      var className = methodInfo.ReflectedType.Name;
+
+      FileInfo file = new FileInfo(path);
+
+      if (!file.Exists)
+      {
+        FileStream fileStream = file.Create();
+        fileStream.Close();
+      }
+
+      using (StreamWriter sw = new StreamWriter(path, true))
+      {
+        sw.WriteLine($"<{DateTime.Now}> | <{className}> | <{logLevel}> | <{message}>");
+        sw.Close();
+      }
     }
 
   }

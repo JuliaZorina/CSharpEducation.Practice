@@ -27,15 +27,7 @@ namespace Practice5.Task1
     public double CalculateBonus(int hoursWorked)
     {
       double bonus;
-      var message = "Метод CalculateBonus() класса Contactor";
-      var consoleLog = new ConsoleLogger();
-      consoleLog.Log(message, LogLevel.Trace);
-      consoleLog.Log(message, LogLevel.Debug);
-      consoleLog.Log(message, LogLevel.Info);
-      consoleLog.Log(message, LogLevel.Warning);
-      consoleLog.Log(message, LogLevel.Error);
-      consoleLog.Log(message, LogLevel.Fatal);
-      Console.WriteLine();
+      LogInfo();
 
       if (hoursWorked <= 20)
         bonus = this.Salary * 0.05;

@@ -7,6 +7,7 @@ namespace Practice5.Task3
     public Dog(string name, int age) 
       : base(name, age)
     {
+      Console.WriteLine("An object of the 'Dog' class was created");
     }
 
     public override void MakeSound()

@@ -12,22 +12,22 @@ namespace Practice6.Task1
       int parseA;
       int parseB;
       int c;
-      try
+
+      if (!int.TryParse(a, out parseA))
       {
-        parseA = int.Parse(a);
-        parseB = int.Parse(b);
-        c = parseA / parseB;
+        throw new FormatException("Переменная a не является числом");
       }
-      catch (DivideByZeroException ex)
+      if (!int.TryParse(b, out parseB))
       {
-        fileLogger.Log(ex.Message, LogLevel.Error);
-        throw new DivideByZeroException("Нельзя делить на ноль", ex);
+        throw new FormatException("Переменная b не является числом");
       }
-      catch (Exception ex) 
+      if (parseB == 0) 
       {
-        fileLogger.Log(ex.Message, LogLevel.Error);
-        throw new Exception("Переменная a не является числом", ex);
-      } 
+        throw new DivideByZeroException("Нельзя делить на ноль");
+      }
+
+      c = parseA / parseB;
+
       return c;
     }
   }

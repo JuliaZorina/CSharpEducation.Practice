@@ -1,4 +1,5 @@
 ﻿using System;
+using Practice5.Task2;
 
 namespace Practice6.Task1
 {
@@ -6,6 +7,9 @@ namespace Practice6.Task1
   {
     static void Main(string[] args)
     {
+      var consoleLogger = new ConsoleLogger();
+      
+
       Console.WriteLine("Введите число a");
       var a = Console.ReadLine();
       Console.WriteLine("Введите число b");
@@ -17,7 +21,8 @@ namespace Practice6.Task1
       }
       catch (Exception ex)
       {
-        Console.WriteLine(ex.ToString());
+        Console.WriteLine(ex);
+        consoleLogger.Log(ex.Message, LogLevel.Error);
       }
       finally
       {

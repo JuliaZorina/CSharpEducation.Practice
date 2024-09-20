@@ -55,7 +55,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Practice5\Practice5.Task2\Practice5.Task2.csproj">
+    <ProjectReference Include="..\..\Practice5\Practice5.Task2\Practice5.Task2.csproj">
       <Project>{73C0EB11-3BFF-445C-A26E-43B6310ACB2F}</Project>
       <Name>Practice5.Task2</Name>
     </ProjectReference>

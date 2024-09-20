@@ -1,15 +1,16 @@
 ﻿using Practice5.Task2;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Practice6.Task1
 {
   public class DivideMenu
   {
+    #region Методы
+
+    /// <summary>
+    /// Меню для взаимодействия пользователя с программой.
+    /// </summary>
     public static void Menu()
     {
       var consoleLogger = new ConsoleLogger();
@@ -99,7 +100,11 @@ namespace Practice6.Task1
         Exit();
       }
     }
-
+    /// <summary>
+    /// Получить файл по указанному имени и вывести результат деления.
+    /// </summary>
+    /// <param name="a">Делимое.</param>
+    /// <param name="b">Делитель.</param>
     private static void GetFile(ref string a, ref string b)
     {
       Console.WriteLine("Введите название файла с расширением");
@@ -109,4 +114,5 @@ namespace Practice6.Task1
       Console.WriteLine($"Результат:{Divide.DevideInt(a, b)}");
     }
   }
+  #endregion
 }

@@ -1,6 +1,7 @@
 ﻿using Practice5.Task2;
 using System;
 using System.IO;
+using System.Linq;
 
 namespace Practice6.Task1
 {
@@ -26,7 +27,7 @@ namespace Practice6.Task1
       }
 
       var numbers = File.ReadAllText(path);
-      var numbersArray = numbers.Split(' ');
+      var numbersArray = numbers.Trim().Split(' ');
       if (numbersArray.Length != 2)
       {
         throw new ArgumentException("Файл пуст или не содержит нужного для операции количества чисел");

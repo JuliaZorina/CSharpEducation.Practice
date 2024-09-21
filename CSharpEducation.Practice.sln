@@ -117,6 +117,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice5.Task2", "Practice
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice5.Task3", "Practice5\Practice5.Task3\Practice5.Task3.csproj", "{E77E0F14-71C5-4989-9136-5B6045A5188F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice7.Task1", "Practice7\Practice7.Task1\Practice7.Task1.csproj", "{845EB922-3527-47A6-BCC7-D8995621C5E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CheckIn|Any CPU = CheckIn|Any CPU
@@ -430,6 +432,12 @@ Global
 		{E77E0F14-71C5-4989-9136-5B6045A5188F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E77E0F14-71C5-4989-9136-5B6045A5188F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E77E0F14-71C5-4989-9136-5B6045A5188F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{845EB922-3527-47A6-BCC7-D8995621C5E6}.CheckIn|Any CPU.ActiveCfg = Debug|Any CPU
+		{845EB922-3527-47A6-BCC7-D8995621C5E6}.CheckIn|Any CPU.Build.0 = Debug|Any CPU
+		{845EB922-3527-47A6-BCC7-D8995621C5E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{845EB922-3527-47A6-BCC7-D8995621C5E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{845EB922-3527-47A6-BCC7-D8995621C5E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{845EB922-3527-47A6-BCC7-D8995621C5E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

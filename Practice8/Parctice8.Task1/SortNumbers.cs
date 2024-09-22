@@ -4,7 +4,6 @@ namespace Parctice8.Task1
 {
   public class SortNumbers
   {
-
     public int SortAscending(int x, int y)
     {
       return x.CompareTo(y);
@@ -14,7 +13,5 @@ namespace Parctice8.Task1
     {
       return y.CompareTo(x);
     }
-
-
   }
 }
